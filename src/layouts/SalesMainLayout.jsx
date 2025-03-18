@@ -1,14 +1,13 @@
-import React from 'react'
-import LeftLayout from './leftLayout/LeftLayout'
-import RightLayout from './rightLayout/RightLayout'
+import React from 'react';
+import LeftLayout from './leftLayout/LeftLayout';
+import RightLayout from './rightLayout/RightLayout';
+import Wrapper from './common/Wrapper';
 
 export default function SalesMainLayout() {
   return (
-    <>
-      <div style={{ minHeight: '100vh', display: 'flex' }}>
-        <LeftLayout></LeftLayout>
-        <RightLayout></RightLayout>
-      </div>
-    </>
-  )
+    <Wrapper>
+      <LeftLayout />
+      <RightLayout />
+    </Wrapper>
+  );
 }
